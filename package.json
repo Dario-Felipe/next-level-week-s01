@@ -1,0 +1,27 @@
+{
+  "name": "next-level-week-s01",
+  "version": "1.0.0",
+  "description": "This project is my journey in \"Next Level Week Starter\" from RocketSeat. At this page on GitHub will be all programming code (HTML, CSS, JavaScript) of this week,. I hope you like guys!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dario-Felipe/next-level-week-s01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dario-Felipe/next-level-week-s01/issues"
+  },
+  "homepage": "https://github.com/Dario-Felipe/next-level-week-s01#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

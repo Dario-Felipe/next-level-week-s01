@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula 02</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/create-point.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
+<title>Aula 02</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="stylesheet" href="./styles/create-point.css">
+<link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
 <body>
   <div id="page-create-point">
-    <header>
-      <img src="./assets/logo.svg" alt="Logomarca">
-      <a href="./index.html">
-        <span></span>
-        Voltar para home
-      </a>
-    </header>
-
+    {% include "partials/page-header.html" %}
     <form action="">
       <h1>Cadastro de ponto de coleta</h1>
       <fieldset>
         <legend>
           <h2>Dados da Entidade</h2>
         </legend>
-        <div class="field">
-          <label for="nome">Nome da entidade</label>
-          <input type="text" name="name" required>
+        <div class="field-group">
+          <div class="field">
+            <label for="nome">Nome da entidade</label>
+            <input type="text" name="name"required>
+          </div><div class="field">
+            <label for="nome">Imagem da entidade</label>
+            <input type="url" name="image" placeholder="http://" required>
+          </div>
         </div>
         <div class="field-group">
           <div class="field">
@@ -62,6 +54,8 @@
       <fieldset>
         <legend>
           <h2>Itens de coleta</h2>
+          <span>Selecione um ou mais itens abaixo</span>
+        </legend>
           <div class="itens-grid">
             <li data-id="1">
               <img src="./assets/lampadas.svg" alt="Lâmpadas">
@@ -88,7 +82,6 @@
               <span>Óleo de Cozinha</span>
             </li>
           </div>
-        </legend>
         <input type="hidden" name="itens" value="">
 
       </fieldset>
